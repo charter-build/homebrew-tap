@@ -2,34 +2,34 @@
 class CharterNightly < Formula
   desc "Command-line access to Charter workspaces (nightly channel)"
   homepage "https://charter.build"
-  version "0.41.3"
+  version "0.43.1"
 
   on_macos do
     on_arm do
-      url "https://releases.charter.build/cli/nightly/0.41.3/charter-0.41.3-darwin-arm64.tar.gz"
-      sha256 "6fed690859fce3b9b8c70eec932571011892e868e1014b54eb77519c76dfbe17"
+      url "https://releases.charter.build/cli/nightly/0.43.1/charter-0.43.1-darwin-arm64.tar.gz"
+      sha256 "01bae8819ee90edb81a1f425639e616d19bb0c00824f6a6501065003b36db38b"
     end
     on_intel do
       # An Intel Homebrew on Apple silicon runs under Rosetta, which lacks the AVX the Intel build needs; the Apple
       # silicon binary runs natively there.
       if Hardware::CPU.in_rosetta2?
-        url "https://releases.charter.build/cli/nightly/0.41.3/charter-0.41.3-darwin-arm64.tar.gz"
-        sha256 "6fed690859fce3b9b8c70eec932571011892e868e1014b54eb77519c76dfbe17"
+        url "https://releases.charter.build/cli/nightly/0.43.1/charter-0.43.1-darwin-arm64.tar.gz"
+        sha256 "01bae8819ee90edb81a1f425639e616d19bb0c00824f6a6501065003b36db38b"
       else
-        url "https://releases.charter.build/cli/nightly/0.41.3/charter-0.41.3-darwin-x64.tar.gz"
-        sha256 "e53ad0ae426c08dd5d06c4b8356efea2a77e5256601c8b30b90712fd658fab6f"
+        url "https://releases.charter.build/cli/nightly/0.43.1/charter-0.43.1-darwin-x64.tar.gz"
+        sha256 "c9b62452373ab0b2891c7c767f8319395ded664788c3ede6f0998a28a5937205"
       end
     end
   end
 
   on_linux do
     on_arm do
-      url "https://releases.charter.build/cli/nightly/0.41.3/charter-0.41.3-linux-arm64.tar.gz"
-      sha256 "b9c0513ffc5706f8b34e050e76070aef0e797ed552c8578d1c5acc6c96c871fa"
+      url "https://releases.charter.build/cli/nightly/0.43.1/charter-0.43.1-linux-arm64.tar.gz"
+      sha256 "0a9a278fba483651695a22ac4bafe7142fbb79b0946c8d4a8aa3f7e8aa7f979d"
     end
     on_intel do
-      url "https://releases.charter.build/cli/nightly/0.41.3/charter-0.41.3-linux-x64.tar.gz"
-      sha256 "77008e5f04c2727d75436fb850f1f8a72858a47201cf20a1aae12a7a9ebeb56f"
+      url "https://releases.charter.build/cli/nightly/0.43.1/charter-0.43.1-linux-x64.tar.gz"
+      sha256 "7215ae8fef0fb58eb84927dc442e7565fb37de0fe9fe09393eeb1cf8e3bb6fcf"
     end
   end
 
